@@ -296,3 +296,50 @@ h1{
         transform: translateY(-20px);
     }
 }
+
+/*RESPONSIVIDADE (Telas menores e Celulares)*/
+@media (max-width: 768px) {
+    /* 1. Menu e Navegação */
+    .navegacao {
+        padding: 1rem;
+    }
+    .menu {
+        gap: 1rem; /* Diminui o espaço entre os links */
+        flex-wrap: wrap; /* Permite que o menu quebre de linha se a tela for muito fina */
+    }
+    .menu-link {
+        font-size: 0.9rem;
+    }
+
+    /* 2. Cabeçalho e Foto de Perfil */
+    .cabecalho {
+        padding-top: 130px; /* Compensa o menu caso ele ocupe duas linhas */
+    }
+    .foto-perfil {
+        width: 200px;  /* Deixa a foto menorzinha */
+        height: 240px;
+    }
+    h1 {
+        font-size: 2.5rem; /* Título menor para não vazar da tela */
+        text-align: center;
+    }
+    .cabecalho-subtitulo {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    /* 3. Espaçamento geral das Seções */
+    .sobre, .projetos, .contatos {
+        padding: 4rem 1.5rem; /* Diminui as margens laterais gigantes */
+    }
+    .sobre-titulo, .projetos-titulos, .contatos-titulo {
+        font-size: 2rem;
+    }
+
+    /* 4. Caixa de Projetos */
+    .projetos-caixa {
+        /* Força os cards a ficarem em uma coluna única, um embaixo do outro */
+        grid-template-columns: 1fr; 
+    }
+}
