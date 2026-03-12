@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yves | Portifólio</title>
+</head>
+
+    <body>
+        <div class="particulas">
+
+        </div>
+
+
+        <nav class = "navegacao">
+            <ul class= "menu">
+                <li>
+                    <a href="#inicio" class="menu-link">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#projetos" class="menu-link">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato" class="menu-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id= "inicio" class="cabecalho">
+                <img src="./img/yves.jpeg" alt="Foto de perfil" class="foto-perfil">
+                <h1>Yves Esteves</h1>
+                <p class="cabecalho-subtitulo">Estudante de Ciência da Computação</p>
+            <div class="redes-sociais">
+                <a href="https://www.linkedin.com/in/yvesesteves/" target="_blank" class="icone-rede">
+                    <img src="./img/lkn.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.github.com/yvesesteves" target="_blank" class="icone-rede">
+                    <img src="./img/gtb.png" alt="GitHub">
+                </a>
+    </div>
+        </main>
+
+        <section id="sobre" class="sobre">  
+            <h2 class="sobre-titulo"> Sobre mim</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                        Olá!
+                        Meu nome é Yves e tenho 24 anos.
+                        Minha história na área da computação começou em 2017, quando iniciei um curso Técnico em Informática na ETEC de Barretos-SP, nele tive meu primeiro contato com lógica, linguagens de programação, construção de projetos, etc. Logo depois, por ter me interessado muito pelos conteúdos que tive contato, iniciei meu Bacharelado em Ciência da Computação na Faculdade Federal de Uberlândia (UFU) em 2021, onde estou cursando até hoje.
+                </p>
+            </div>
+        </section>
+
+            <section id="projetos" class="projetos">
+                <h2 class="projetos-titulos">Meus Projetos</h2>
+                
+                <div class="projetos-caixa">
+
+                    <a href="https://github.com/yvesesteves/Voting-System" target="_blank" class="projetos-link">
+                        <div class="projetos-card">
+                            <img src="img/projeto1.png" alt="Sistema de Votação Blockchain" class="projetos-imagem">
+                            <div class="caixa-textos-projeto">
+                                <h3 class="info-projetos">Sistema de Votação Blockchain</h3>
+                                <p class="paragrafo-projetos">Sistema de votação descentralizado baseado em blockchain utilizando Ethereum, Hardhat, Node.js e JavaScript, garantindo transparência e integridade no processo de votação.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/yvesesteves/JavaScript/tree/main/Pagina%20do%20AppleWatch" target="_blank" class="projetos-link">
+                        <div class="projetos-card">
+                            <img src="img/projeto2.png" alt="Apple Watch Product Page" class="projetos-imagem">
+                            <div class="caixa-textos-projeto">
+                                <h3 class="info-projetos">Apple Watch Product Page</h3>
+                                <p class="paragrafo-projetos">Página web inspirada na apresentação do Apple Watch, desenvolvida com HTML, CSS e JavaScript, focada em design moderno e responsividade.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div> 
+            </section>
+
+        <section id="contato" class="contatos">
+            <h2 class="contatos-titulo">Entre em Contato</h2>
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome">
+                </div>
+
+                <div class="grupo-form">
+                    <textarea placeholder="Digite sua mensagem" id="mensagem" rows="6" class="campo-form"></textarea>
+                </div>
+
+                <button type= "submit" class="botao-form"><img src="img/whatsapp.png" alt="icone whatsapp" class="icone-whats">Enviar WhatsApp</button>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
