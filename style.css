@@ -11,17 +11,14 @@ html{
 
 
 :root {
-  /* Cores de Destaque (Para botões e links) */
-  --primaria: #10b981;    /* Um verde vibrante para chamar atenção */
-  --secundaria: #34d399;  /* Verde um pouco mais claro para o "hover" */
+  --primaria: #10b981;    
+  --secundaria: #34d399;  
   
-  /* Cores de Fundo - Aqui está o verde que você pediu! */
-  --escuro: #064e3b;      /* Verde escuro (para os cards, menu e formulários) */
-  --maisEscuro: #022c22;  /* Verde super profundo (para o fundo geral do site) */
+  --escuro: #064e3b;    
+  --maisEscuro: #022c22;  
   
-  /* Texto e Efeitos */
-  --claro: #ecfdf5;       /* Um branco com um toque levíssimo de verde para harmonizar */
-  --vidro: rgba(255, 255, 255, 0.08); /* Efeito de vidro um pouquinho mais forte */
+  --claro: #ecfdf5;   
+  --vidro: rgba(255, 255, 255, 0.08); 
 }
 
 body{
@@ -159,14 +156,14 @@ h1{
 .projetos-imagem {
     height: 200px;
     width: 100%;
-    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer (ela vai focar no centro) */
-    object-position: top; /* Opcional: Garante que a parte de cima da imagem apareça mais */
+    object-fit: cover; 
+    object-position: top; 
 }
 
 .projetos-link {
-    text-decoration: none; /* Tira o sublinhado do link */
-    color: inherit; /* Mantém a cor original do texto */
-    display: block; /* Garante que o clique funcione no card inteiro */
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
 }
 
 
@@ -238,7 +235,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Dá aquele espacinho elegante entre a imagem e o texto */
+    gap: 10px; 
 
 }
 
@@ -250,27 +247,27 @@ h1{
 .icone-whats {
     width: 24px;
     height: 24px;
-    object-fit: contain; /* Garante que a imagem não fique distorcida */
+    object-fit: contain; 
 }
 
 
 .redes-sociais {
     display: flex;
     gap: 1.5rem;
-    margin-top: 25px; /* Dá um respiro depois do subtítulo */
+    margin-top: 25px; 
 }
 
 .icone-rede img {
-    width: 35px; /* Tamanho elegante, nem muito grande nem muito pequeno */
+    width: 35px; 
     height: 35px;
     object-fit: contain;
     transition: all 0.3s ease;
 }
 
-/* O efeito mágico quando passa o mouse */
+
 .icone-rede:hover img {
-    transform: translateY(-5px) scale(1.1); /* Faz o ícone subir e crescer um pouco */
-    filter: drop-shadow(0px 5px 10px rgba(16, 185, 129, 0.6)); /* Brilho com a sua cor verde */
+    transform: translateY(-5px) scale(1.1); 
+    filter: drop-shadow(0px 5px 10px rgba(16, 185, 129, 0.6));
 }
 
 .particulas{
@@ -299,28 +296,27 @@ h1{
 
 /*RESPONSIVIDADE (Telas menores e Celulares)*/
 @media (max-width: 768px) {
-    /* 1. Menu e Navegação */
     .navegacao {
         padding: 1rem;
     }
     .menu {
-        gap: 1rem; /* Diminui o espaço entre os links */
-        flex-wrap: wrap; /* Permite que o menu quebre de linha se a tela for muito fina */
+        gap: 1rem; 
+        flex-wrap: wrap; 
     }
     .menu-link {
         font-size: 0.9rem;
     }
 
-    /* 2. Cabeçalho e Foto de Perfil */
+
     .cabecalho {
-        padding-top: 130px; /* Compensa o menu caso ele ocupe duas linhas */
+        padding-top: 130px; 
     }
     .foto-perfil {
-        width: 200px;  /* Deixa a foto menorzinha */
+        width: 200px;  
         height: 240px;
     }
     h1 {
-        font-size: 2.5rem; /* Título menor para não vazar da tela */
+        font-size: 2.5rem; 
         text-align: center;
     }
     .cabecalho-subtitulo {
@@ -329,17 +325,15 @@ h1{
         padding: 0 1rem;
     }
 
-    /* 3. Espaçamento geral das Seções */
     .sobre, .projetos, .contatos {
-        padding: 4rem 1.5rem; /* Diminui as margens laterais gigantes */
+        padding: 4rem 1.5rem; 
     }
     .sobre-titulo, .projetos-titulos, .contatos-titulo {
         font-size: 2rem;
     }
 
-    /* 4. Caixa de Projetos */
+
     .projetos-caixa {
-        /* Força os cards a ficarem em uma coluna única, um embaixo do outro */
         grid-template-columns: 1fr; 
     }
 }
