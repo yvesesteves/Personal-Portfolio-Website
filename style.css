@@ -143,16 +143,17 @@ h1{
 
 }
 
+
 .projetos-card:hover{
     box-shadow: 0 10px 20px rgba(52, 211, 153, 0.2);
     transform: translateY(-10px) scale(1.03);
 }
 
-.projetos-caixa{
+.projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1000px; 
     margin: 0 auto;
 }
 
