@@ -26,14 +26,16 @@ body{
     color: var(--claro);
 }
 
-.navegacao{
+.navegacao {
     position: fixed;
-    top: 0 ;
-    background-color: rgba(255, 255, 255, 0.06);
+    top: 0;
+    background-color: rgba(2, 44, 34, 0.85); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
     width: 100%;
-    z-index: 100;
+    z-index: 1000; 
     padding: 1.5rem;
-
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .menu{
@@ -119,8 +121,28 @@ h1{
 }
 
 .sobre-paragrafo{
-    text-align: center;
+    text-align: justify; /* Alinhamento justificado fica melhor para textos grandes */
     font-size: 1.0rem;
+    margin-bottom: 1rem; /* Dá espaço entre os parágrafos */
+    line-height: 1.6;
+}
+
+/* Novos estilos para a lista de experiências no "Sobre" */
+.sobre-lista {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding-left: 20px;
+    line-height: 1.6;
+    color: var(--claro);
+}
+
+.sobre-lista li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo adicional para garantir a separação correta da seção projetos */
+.projetos {
+    padding: 6rem 2rem;
 }
 
 .projetos-card {
