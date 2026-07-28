@@ -182,17 +182,12 @@ a[x-apple-data-detectors] {
 /* =========================================
    CABEÇALHO (HERO)
    ========================================= */
-.cabecalho {
-    min-height: 100vh;
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center;
-    padding: 120px 4% 4rem 4%; 
-    gap: 3rem; 
-    max-width: 1600px; 
-    margin: 0 auto;
-}
+.cabecalho { 
+        flex-direction: column; 
+        text-align: center; 
+        padding-top: 260px; 
+        gap: 2.5rem; 
+    }
 
 .hero-conteudo { 
     flex: 1.5; 
