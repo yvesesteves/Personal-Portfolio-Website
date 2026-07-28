@@ -54,11 +54,8 @@ a[x-apple-data-detectors] {
 .slant-top {
     position: relative;
     z-index: 10; 
-    /* Puxa a seção inteira para cima, sobrepondo a anterior */
     margin-top: -4vw; 
-    /* Adiciona padding extra no topo para o corte não engolir o seu texto */
     padding-top: calc(8rem + 4vw); 
-    /* Faz um corte físico exato na diagonal, sem elementos falsos */
     clip-path: polygon(0 4vw, 100% 0, 100% 100%, 0 100%); 
 }
 
@@ -664,8 +661,8 @@ a[x-apple-data-detectors] {
 
 .projetos-caixa { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    gap: 3rem; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4rem;
     width: 100%; 
 }
 
@@ -693,7 +690,7 @@ a[x-apple-data-detectors] {
 }
 
 .projetos-imagem { 
-    height: 300px; 
+    height: 380px; 
     width: 100%; 
     object-fit: cover; 
     object-position: top; 
@@ -741,11 +738,33 @@ a[x-apple-data-detectors] {
 }
 
 .links-diretos p { 
+    display: flex; 
+    align-items: center;
     font-family: monospace; 
     font-size: 1.1rem; 
     font-weight: bold; 
     margin-bottom: 1.2rem; 
     color: var(--claro); 
+}
+
+.link-contato {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    color: var(--claro);
+    text-decoration: none; 
+    transition: all 0.3s ease;
+}
+
+.link-contato:hover {
+    color: var(--destaque); 
+    transform: translateX(8px);
+}
+
+.icone-link {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .formulario-linhas { 
@@ -860,14 +879,12 @@ a[x-apple-data-detectors] {
         flex-wrap: wrap; 
     }
 
-    /* Centraliza o Menu de Idioma e Open to Work */
     .nav-extras {
         justify-content: center;
         width: 100%;
         margin-top: 5px;
     }
     
-    /* Coloca o texto PRIMEIRO e a foto em SEGUNDO no celular */
     .cabecalho { 
         flex-direction: column; 
         text-align: center; 
@@ -886,13 +903,11 @@ a[x-apple-data-detectors] {
         gap: 10px;
     }
     
-    /* Reduz a foto no mobile para a tela respirar melhor */
     .foto-perfil { 
         width: 220px; 
         height: 270px; 
     }
     
-    /* Redução de Títulos Gigantes para caber no celular sem dar scroll pro lado */
     .hero-conteudo h1, 
     .titulo-secao { 
         font-size: 3.2rem; 
@@ -958,7 +973,7 @@ a[x-apple-data-detectors] {
     100% { transform: translateY(-200px) translateX(30px); opacity: 0; } /* Some lá em cima */
 }
 
-/* 3. Glitch / Efeito Aberração Cromática no Nome */
+/* 3. Glitch no Nome */
 .glitch-efeito {
     display: inline-block;
     animation: piscar-tv 3s infinite;
