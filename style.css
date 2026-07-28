@@ -24,7 +24,14 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+    width: 100%;
     overflow-x: hidden;
+}
+
+/* ajuste para ios (mobile) */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
 /* =========================================
@@ -852,11 +859,19 @@ body {
         gap: 1.2rem; 
         flex-wrap: wrap; 
     }
+
+    /* Centraliza o Menu de Idioma e Open to Work */
+    .nav-extras {
+        justify-content: center;
+        width: 100%;
+        margin-top: 5px;
+    }
     
+    /* Coloca o texto PRIMEIRO e a foto em SEGUNDO no celular */
     .cabecalho { 
-        flex-direction: column-reverse; 
+        flex-direction: column; 
         text-align: center; 
-        padding-top: 180px; 
+        padding-top: 150px; 
         gap: 2.5rem; 
     }
     
@@ -868,16 +883,19 @@ body {
     .hero-botoes { 
         justify-content: center; 
         flex-wrap: wrap; 
+        gap: 10px;
     }
     
+    /* Reduz a foto no mobile para a tela respirar melhor */
     .foto-perfil { 
-        width: 240px; 
-        height: 290px; 
+        width: 220px; 
+        height: 270px; 
     }
     
+    /* Redução de Títulos Gigantes para caber no celular sem dar scroll pro lado */
     .hero-conteudo h1, 
     .titulo-secao { 
-        font-size: 3.8rem; 
+        font-size: 3.2rem; 
         letter-spacing: 0; 
         margin-bottom: 2rem; 
     }
