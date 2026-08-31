@@ -926,6 +926,10 @@ a[x-apple-data-detectors] {
     .projetos-caixa { 
         grid-template-columns: 1fr; 
     }
+
+    .projetos-imagem { 
+        height: 220px; 
+    }
     
     .stack-icons { 
         grid-template-columns: repeat(2, 1fr); 
@@ -1002,3 +1006,9 @@ a[x-apple-data-detectors] {
         transform: skew(0deg);
     }
 }
+
+/* Opção A: Se a sua .projetos-caixa usa CSS Grid (display: grid;) */
+.projeto-destaque {
+    grid-column: 1 / -1; 
+}
+
